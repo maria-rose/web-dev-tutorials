@@ -1,0 +1,33 @@
+body {
+	background: #999;
+	font-family: arial;
+}
+
+h1, h2 {
+	color: #555;
+}
+
+a{
+	color: green;
+}
+
+p{
+	background: #666;
+	color: white;
+	/*Two values for Topbottom and sideside*/
+	/*4 for top, botttom, side, side*/
+	padding: 10px; 
+}
+/*Makes a secondary class to make specific styling*/
+/* will override things before it*/
+.secondary{
+	background: white;
+	color: #111;
+	padding: 10px;
+}
+/*Produces formatting for the id of special*/
+#special {
+	background: blue;
+	color: white;
+	padding: 10px;
+}
