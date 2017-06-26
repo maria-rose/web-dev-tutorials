@@ -1,34 +1,49 @@
-/*Be sure this file is linked correctly in the html files*/
-body {
+body{
+	margin:0;
+
+}
+header{
 	background: #999;
-	font-family: arial;
-}
-
-h1, h2 {
-	color: #555;
-}
-
-a{
-	color: green;
-}
-
-p{
-	background: #666;
 	color: white;
-	/*Two values for Topbottom and sideside*/
-	/*4 for top, botttom, side, side*/
-	padding: 10px; 
+	padding: 5px 15px 0px;
 }
-/*Makes a secondary class to make specific styling*/
-/* will override things before it*/
-.secondary{
-	background: white;
-	color: #111;
-	padding: 10px;
+header h1{
+	margin: 0;
+	display: inline;
 }
-/*Produces formatting for the id of special*/
-#special {
-	background: blue;
+/*note this makes only nav ul's have this, as opposed to all ul's*/
+nav ul{
+	margin:0;
+	padding: 0 0 0 15px;
+	display: inline;
+}
+nav ul li{
+	background: black;
 	color: white;
-	padding: 10px;
+	display: inline-block;
+	list-style-type: none;
+	/*adds surrounding space, padding adds its own background space*/
+	margin: 0; 
+	padding: 5px 10px;
+
+}
+nav ul li a{
+	color: white;
+}
+
+.row{
+
+}
+.col{
+	float:left; /*puts cols as left as they go*/
+	background: pink;
+	border-radius: 5px; /*makes curved corners*/
+	padding: .5%;
+	/*percentage makes them rearrange depending on screen size*/
+	/*if percentages add to >100%, simply wraps to next line*/
+	width: 31%; 
+	margin: .5%;
+}
+footer{
+	clear:both; /*forget about the floats and have own line*/
 }
